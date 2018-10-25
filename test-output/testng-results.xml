@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14829" started-at="2018-10-25T06:10:28Z" finished-at="2018-10-25T06:10:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14829" started-at="2018-10-25T06:10:28Z" finished-at="2018-10-25T06:10:43Z">
+      <class name="tests.Test1">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:tests.Test1@1786f9d5]" name="beforetest" is-config="true" duration-ms="10382" started-at="2018-10-25T11:40:28Z" finished-at="2018-10-25T11:40:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Test1@1786f9d5]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2018-10-25T11:40:39Z" finished-at="2018-10-25T11:40:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Test1.test1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.Test1@1786f9d5]" name="test1" duration-ms="12" started-at="2018-10-25T11:40:39Z" finished-at="2018-10-25T11:40:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Test1@1786f9d5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-25T11:40:39Z" finished-at="2018-10-25T11:40:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=Test1.test1()[pri:0, instance:tests.Test1@1786f9d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Test1@1786f9d5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-25T11:40:40Z" finished-at="2018-10-25T11:40:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Test1.test2(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test1@1786f9d5]" name="test2" duration-ms="1736" started-at="2018-10-25T11:40:40Z" data-provider="dp" finished-at="2018-10-25T11:40:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manishlal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rupali@07]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Test1@1786f9d5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-25T11:40:42Z" finished-at="2018-10-25T11:40:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=Test1.test2(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test1@1786f9d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.Test1@1786f9d5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-10-25T11:40:42Z" finished-at="2018-10-25T11:40:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Test1.test3()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:tests.Test1@1786f9d5]" name="test3" duration-ms="194" started-at="2018-10-25T11:40:42Z" depends-on-methods="tests.Test1.test2" finished-at="2018-10-25T11:40:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:tests.Test1@1786f9d5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-25T11:40:42Z" finished-at="2018-10-25T11:40:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test3 status=SUCCESS method=Test1.test3()[pri:0, instance:tests.Test1@1786f9d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:tests.Test1@1786f9d5]" name="endTest" is-config="true" duration-ms="1152" started-at="2018-10-25T11:40:42Z" finished-at="2018-10-25T11:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- tests.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
