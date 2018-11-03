@@ -1,7 +1,12 @@
 package tests;
 
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,12 +25,12 @@ public class Test1 extends Base1 {
 
 	@BeforeTest(alwaysRun = true)
 	public void beforetest() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Downloads\\requests\\chromedriver1.exe");
-		dr=new ChromeDriver();
-	//	dr = new FirefoxDriver();
+	//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Downloads\\requests\\chromedriver1.exe");
+	//	dr=new ChromeDriver();
+		dr = new FirefoxDriver();
 		dr.get("http://staging.buyforexonline.com/admin");
 		dr.manage().window().maximize();
-		w=new WebDriverWait(dr,10);
+		w=new WebDriverWait(dr,20);
 
 	}
 
@@ -71,6 +76,26 @@ public class Test1 extends Base1 {
 		
 	w.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Admin')]"))).click();	
 		
+	}
+	
+	
+	
+	@Test(priority=3,dependsOnMethods="test3")
+	
+	
+	public void test4() throws InterruptedException{
+		Thread.sleep(15000);
+
+Set<String>s=dr.getWindowHandles();
+Iterator<String>s1=s.iterator();
+String a=s1.next();
+String b=s1.next();
+System.out.println(a);
+System.out.println(b);
+dr.switchTo().window(b);
+dr.findElement(By.xpath("html/body/section[1]/div[1]/div/div/div[2]/div/ul/li[1]/a")).click();
+	
+	
 	}
 
 }
