@@ -106,5 +106,36 @@ dr.findElement(By.xpath("html/body/section[1]/div[1]/div/div/div[2]/div/ul/li[1]
 		System.out.println("hello3");
 		
 	}
+	
+	
+	
+@Test
+	
+	public void test6(){
+		
+		System.out.println("hello4");
+		
+	}
+
+@Test
+
+public void test7(){
+	
+	System.out.println("hello6");
+	
+}
+
+@Test
+
+public void test8(){
+	
+	System.out.println("hello78branch3");
+	
+}
+
+
+
+
+
 
 }
