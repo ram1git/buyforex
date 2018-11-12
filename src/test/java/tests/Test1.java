@@ -119,11 +119,21 @@ dr.findElement(By.xpath("html/body/section[1]/div[1]/div/div/div[2]/div/ul/li[1]
 
 @Test
 
-public void test(){
+public void test7(){
 	
 	System.out.println("hello6");
 	
 }
+
+@Test
+
+public void test8(){
+	
+	System.out.println("hello78branch3");
+	
+}
+
+
 
 
 
